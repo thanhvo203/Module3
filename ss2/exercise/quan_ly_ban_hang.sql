@@ -1,28 +1,28 @@
 create database quan_ly_ban_hang;
 use quan_ly_ban_hang;
 
-create table customer(
-cID int primary key auto_increment,
-cName varchar(50) not null,
-cAge int
+create table khach_hang(
+id_khach_hang int primary key auto_increment,
+name_khach_hang varchar(50) not null,
+tuoi_khach_hang int
 );
-create table `order`(
-oID int primary key auto_increment,
-oDate date,
-oTotalPrice int,
-cID int,
-foreign key (cID) references customer(cID)
+create table dat_hang(
+id_dat_hang int primary key auto_increment,
+ngay_dat_hang date,
+tong_tien_dat_hang int,
+id_khach_hang int,
+foreign key (id_khach_hang) references khach_hang(id_khach_hang)
 );
-create table product(
-pID int primary key auto_increment,
-pName varchar(50) not null,
-pPrice int
+create table san_pham(
+id_san_pham int primary key auto_increment,
+ten_san_pham varchar(50) not null,
+gia_san_pham int
 );
-create table orderdetail(
-odQTY int,
-oID int,
-pID int,
-primary key(oID,pID),
-foreign key (oID) references `order`(oID),
-foreign key (pID) references product(pId)
+create table chi_tiet_dat_hang(
+hoa_don_chi_tiet_dat_hang int,
+id_dat_hang int,
+id_san_pham int,
+primary key(id_dat_hang,id_san_pham),
+foreign key (id_dat_hang) references dat_hang(id_dat_hang),
+foreign key (id_san_pham) references san_pham(id_san_pham)
 );
