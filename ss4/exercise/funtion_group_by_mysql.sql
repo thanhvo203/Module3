@@ -70,8 +70,8 @@ order by mark.mark desc
 limit 1;
 
 -- Hiển thị các thông tin sinh viên và điểm trung bình của mỗi sinh viên, xếp hạng theo thứ tự điểm giảm dần
-select *
+select student.* , avg(mark.mark)
 from student
 join mark 
 on mark.student_id = student.student_id
-order by mark desc;
+group by student.student_id;

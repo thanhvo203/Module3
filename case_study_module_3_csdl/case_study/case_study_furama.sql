@@ -147,13 +147,13 @@ values ('Nguyễn Thị Hào','1970-11-07',0,'643431213','0945423362','thihao07@
  ('Nguyễn Tâm Đắc','1989-07-01',1,'344343432','0987654321','dactam@gmail.com','22 Ngô Quyền, Đà Nẵng',2);   
  
  
- insert into dich_vu(ten_dich_vu,dien_tich,chi_phi_thue,so_nguoi_toi_da,ma_kieu_thue,tieu_chuan_phong,mo_ta_tien_nghi_khac,dien_tich_ho_boi,so_tang)
- values ('Villa Beach Front',25000,10000000,10,3,'vip','Có hồ bơi',500,4),
-  ('House Princess 01',14000,5000000,7,2,'vip','Có thêm bếp nướng',null,3),
-  ('Room Twin 01',5000,1000000,2,4,'normal','Có tivi',null,null),
-  ('Villa No Beach Front',22000,9000000,8,3,'normal','Có hồ bơi',300,3),
-  ('House Princess 02',10000,4000000,5,3,'normal','Có thêm bếp nướng',null,2),
-  ('Room Twin 02',3000,900000,2,4,'normal','Có tivi',null,null);
+ insert into dich_vu(ten_dich_vu,dien_tich,chi_phi_thue,so_nguoi_toi_da,ma_kieu_thue,tieu_chuan_phong,mo_ta_tien_nghi_khac,dien_tich_ho_boi,so_tang,ma_loai_dich_vu)
+ values ('Villa Beach Front',25000,10000000,10,3,'vip','Có hồ bơi',500,4,1),
+  ('House Princess 01',14000,5000000,7,2,'vip','Có thêm bếp nướng',null,3,2),
+  ('Room Twin 01',5000,1000000,2,4,'normal','Có tivi',null,null,3),
+  ('Villa No Beach Front',22000,9000000,8,3,'normal','Có hồ bơi',300,3,1),
+  ('House Princess 02',10000,4000000,5,3,'normal','Có thêm bếp nướng',null,2,2),
+  ('Room Twin 02',3000,900000,2,4,'normal','Có tivi',null,null,3);
 
 insert into hop_dong(ngay_lam_hop_dong,ngay_ket_thuc,tien_dat_coc,ma_nhan_vien,ma_khach_hang,ma_dich_vu)
 values ('2020-12-08','2020-12-08',0,3,1,3),
