@@ -83,7 +83,7 @@ tien_dat_coc double not null,
 ma_nhan_vien int,
 foreign key(ma_nhan_vien) references nhan_vien(ma_nhan_vien),
 ma_khach_hang int,
-foreign key(ma_khach_hang) references khach_hang(ma_khach_hang),
+foreign key(ma_khach_hang) references khach_hang(ma_khach_hang) on delete set null,
 ma_dich_vu int,
 foreign key(ma_dich_vu) references dich_vu(ma_dich_vu)
 );
