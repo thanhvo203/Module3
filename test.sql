@@ -91,3 +91,152 @@ select * from student where class_id = (select id from class where `name` = 'c11
 
 select student.`name` , class.`name` from class  right join student on class.id = student.class_id;
 
+select c.name, count(s.id) as "số lượng học viên"
+from student s
+join class c
+on c.id = s.class_id
+group by c.id;
+-- 2.             Tính điểm lớn nhất của mỗi các lớp ( yêu cầu viết code ra giấy )
+select c.name, max(s.point) as "điểm cao nhất"
+from student s
+join class c
+on c.id = s.class_id
+group by c.id;
+
+-- 3.             Tình điểm trung bình  của từng lớp ( yêu cầu viết code ra giấy )
+select c.name, avg(s.point) as "điểm trung bình"
+from student s
+join class c
+on c.id = s.class_id
+group by c.id;
+
+-- 4.             Lấy ra toàn bộ tên và ngày sinh các instructor và student ở CodeGym. ( yêu cầu viết code ra giấy )
+select name, birthday
+from instructor
+union
+select name, birthday
+from student;
+-- 5.             Lấy ra top 3 học viên có điểm cao nhất của trung tâm. ( yêu cầu viết code ra giấy )
+select id, name,point
+from student
+limit 3 offset 2;
+-- order by point desc
+-- limit 3;
+-- 6.             Lấy ra các học viên có điểm số là cao nhất của trung tâm. ( yêu cầu viết code ra giấy )
+select * 
+from student
+where point = (
+select max(point)
+from student);
+
+-- ============ Bài 5 ===============
+
+-- Câu 1: đánh và xóa index cho cột name
+explain select * 
+from student
+where name = "nguyen ngoc cu";
+create unique index index_name on student(name);
+explain select * 
+from student
+where name = "nguyen ngoc cu";
+drop index index_name on student;
+
+-- Câu 2: Tạo view chỉ chứa thông tin id và name của student
+
+create view view_student(id,name,birthday) as
+select id,name,birthday
+from student;
+insert into view_student(name,birthday)
+values ("công","1991-10-09");
+drop view view_student;
+create view view_student_class(id,name,class_name) as
+select student.id,student.name,class.name
+from student
+join class
+on student.class_id = class.id;
+
+-- 4. Stored Procedure ==========
+-- Java: viết hàm void có tên là findByName, có tham số truyền vào là name
+-- void findByName(String name) {
+--   // Body
+-- }
+-- ========== IN ==========
+delimiter //
+create procedure find_by_name(in name varchar(50)) -- mặc định tham số là in
+begin
+	select * from student s
+    where s.name = name;
+end //
+delimiter ;
+
+call find_by_name('nguyen ngoc cu'); -- Tái sử dụng mã nguồn
+-- call find_by_name('Nguyễn Văn A'); -- Tái sử dụng mã nguồn
+
+-- ========== OUT ==========
+delimiter //
+create procedure find_by_name_out(in name varchar(50), out count int)
+begin
+    select count(*) into count from student s 
+    where s.name = name;
+end //
+delimiter ;
+
+call find_by_name_out('le van hung', @count);
+select @count;
+
+
+-- ========== INOUT ==========
+delimiter //
+create procedure find_by_name_inout(inout name varchar(50))
+begin
+	set name = (
+    select count(*) from student s
+    where s.name = name
+    );
+end //
+delimiter ;
+
+set @abc = 'Nguyễn Văn A';
+select @abc;
+call find_by_name_inout(@abc);
+select @abc;
+
+
+
+-- 5 tạo trigger tự động tạo tài khoản jame trước khi thêm mới một học viên
+ select * from student;
+ select * from jame;
+
+DELIMITER //
+CREATE TRIGGER tr_auto_create_jame 
+BEFORE INSERT ON student
+FOR EACH ROW
+BEGIN
+insert into jame(`account`, `password`) values ( new.email, '123');
+END //
+DELIMITER ;
+
+insert into student(`name`,birthday, email, gender,`point`, class_id,`account`) 
+ values ('Bùi minh tiến','1990-12-12','tienb@gmail.com',1,8,1,'tienb@gmail.com');
+ 
+-- 6 viêt 1 function xếp loại học lưc theo point
+delimiter //
+create function f_xep_loai(diem int)
+returns varchar(50)
+deterministic
+begin
+	declare loai varchar(50);
+	if diem>=8 then
+	set loai ='giỏi';
+	elseif diem>=7 then
+	set loai='khá';
+	else
+	set loai='trung bình';
+	end if;
+	return loai;
+end //
+delimiter ;
+
+-- sử dụng function
+select s.name, f_xep_loai(s.point) 
+from student s;

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="stylecss.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="top">
+    <p class="display"></p>
+    <div class="left">
+        <img alt="Logo TruyenQQ" class="mobile_display" src="https://truyenqq.com.vn/assets/images/logo-icon.png">
+        <button id="setting_dark_mode" onclick="setting_active_dark_mode(this);" class="dark_mode">
+            <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+        </button>
+    </div>
+    <div class="right">
+       <ul>
+           <li onclick="$('header .top_search').slideDown()" class="other">
+               <i class="fa fa-search" aria-hidden="true"></i>
+           </li>
+           <li>
+               <button onclick="login">Đăng Nhập</button>
+           </li>
+           <li>
+               <button onclick="popup(register)">Đăng Ký</button>
+           </li>
+       </ul>
+    </div>
+
+</div>
+
+</body>
+</html>

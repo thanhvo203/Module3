@@ -1,0 +1,10 @@
+div.top {
+    background: black;
+}
+div.right{
+    float: right;
+}
+ul {
+    display: flex;
+    width: 50%;
+}

@@ -30,8 +30,21 @@ DELIMITER ;
 -- với nguyên tắc không được trùng khóa chính và đảm bảo toàn vẹn tham chiếu đến các bảng liên quan.
 
 delimiter //
-create procedure sp_them_moi_hop_dong()
+create procedure sp_them_moi_hop_dong(ma_hop_dong int , ngay_hop_dong datetime, ngay_ket_thuc datetime,
+tien_dat_coc double , ma_nhan_vien int, ma_khach_hang int , ma_dich_vu int)
 begin
-   
+   if((select ma_hop_dong from hop_dong) in (sp_them_moi_hop_dong.ma_hop_dong)) then
+   signal sqlstate "10000"
+   set message_text =  "Mã đã trùng lăp. Vui lòng nhập vào mã khác";
+   else
+      insert into hop_dong
+      values(ma_hop_dong , ngay_hop_dong,ngay_ket_thuc,tien_dat_coc,ma_nhan_vien,ma_khach_hang,ma_dich_vu);
+      end if;
 end; //
 delimiter // ;
+
+drop procedure sp_them_moi_hop_dong;
+
+-- task 25: 25.	Tạo Trigger có tên tr_xoa_hop_dong khi xóa bản ghi trong bảng hop_dong thì 
+-- hiển thị tổng số lượng bản ghi còn lại có trong bảng hop_dong ra giao diện console của database.
+-- Lưu ý: Đối với MySQL thì sử dụng SIGNAL hoặc ghi log thay cho việc ghi ở console.
