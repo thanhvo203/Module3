@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        body{
+          font-family: Arial;
+        }
+        #menu {
+            height: 30px;
+            background-color: black;
+            border: 1px solid white;
+        }
+        #menu , #menu ul , #menu li{
+            margin: 0;
+            padding: 0;
+        }
+        #menu li{
+            position: relative;
+            float: left;
+            list-style: none;
+        }
+        #menu li a{
+            width: 100px;
+            height: 30px;
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            line-height: 30px;
+            background-color: black;
+            color: white;
+        }
+        #menu ul ul li a{
+            width: 200px;
+            text-align: left;
+            padding-left: 10px;
+        }
+        #menu li a:hover{
+            background-color: red;
+        }
+        #menu ul ul {
+           position: absolute;
+            top: 30px;
+            left: 15px;
+            visibility: hidden;
+        }
+        #menu ul li:hover ul{
+            visibility: visible;
+        }
+        
+
+    </style>
+</head>
+<body>
+<h3>ACCP i10</h3>
+<div id="menu">
+    <ul>
+        <li><a href="#">Sem1</a>
+            <ul>
+                <li><a href="#">Computing</a></li>
+                <li><a href="#">C</a><li>
+                <li><a href="#">Building</a></li>
+                <li><a href="#">Transaction</a></li>
+                <li><a href="#">Project</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Sem2</a>
+            <ul>
+                <li><a href="#">Cloud</a></li>
+                <li><a href="#">APJ-I</a></li>
+                <li><a href="#">APJ-II</a></li>
+                <li><a href="#">APJ-III</a></li>
+                <li><a href="#">eProject</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Sem3</a></li>
+        <li><a href="#">Sem4</a></li>
+    </ul>
+</div>
+
+</body>
+</html>
