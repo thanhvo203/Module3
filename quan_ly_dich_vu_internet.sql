@@ -1,2 +1,0 @@
-create database quan_ly_dich_vu_internet;
-use quan_ly_dich_vu_internet;
