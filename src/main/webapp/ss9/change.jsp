@@ -11,7 +11,7 @@
     <title>Title</title>
 </head>
 <body>
-<form method="post" action="/ChangeMoneyServlet">
+<form method="post" action="/change-money">
     <ul>
         <li>
             <label>Product Discription</label>

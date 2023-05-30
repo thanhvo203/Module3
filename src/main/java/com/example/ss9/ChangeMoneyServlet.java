@@ -5,7 +5,7 @@ import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
 
-@WebServlet(name = "ChangeMoneyServlet", value = "/ChangeMoneyServlet")
+@WebServlet(name = "ChangeMoneyServlet", value = "/change-money")
 public class ChangeMoneyServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -23,7 +23,7 @@ public class ChangeMoneyServlet extends HttpServlet {
         request.setAttribute("DiscountPercent", request.getParameter("discount"));
         request.setAttribute("Discount",discountPercent );
         request.setAttribute("TotalPrice", totalMoney);
-        RequestDispatcher r = request.getRequestDispatcher("ss9/display.jsp");
-        r.forward(request,response);
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("ss9/display.jsp");
+        requestDispatcher.forward(request,response);
     }
 }
