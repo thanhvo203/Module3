@@ -1,0 +1,92 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%--
+  Created by IntelliJ IDEA.
+  User: Admin
+  Date: 6/1/2023
+  Time: 2:32 PM
+  To change this template use File | Settings | File Templates.
+--%>
+<link rel="stylesheet" href="bootstrap520/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="datatables/css/dataTables.bootstrap5.min.css"/>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title>
+
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+<center>
+    <h1>User Management</h1>
+    <h2>
+        <a href="/user?action=create">Add New User</a>
+    </h2>
+</center>
+<div align="center">
+    <table border="1" cellpadding="5">
+        <caption><h2>List of Users</h2></caption>
+        <tr>
+            <th>STT</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Country</th>
+            <th>Actions</th>
+        </tr>
+        <
+        <c:forEach varStatus="loop" var="list" items="${list}">
+            <tr>
+                <td>
+                    <c:out value="${loop.count}"/>
+                </td>
+                <td><c:out value="${list.name}"/></td>
+                <td><c:out value="${list.email}"/></td>
+                <td><c:out value="${list.country}"/></td>
+                <td>
+                    <a href="/user?action=edit&id=${list.id}">Edit</a>
+                    <button type="button" class="btn btn-primary"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            onclick="remove(${list.id},'${list.name}')">
+                        Delete
+                    </button>
+                </td>
+            </tr>
+        </c:forEach>
+    </table>
+</div>
+<div class="modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Delete</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure delete this user?</p>
+                <span id="name" style="color: red"></span>
+            </div>
+            <div class="modal-footer">
+                <form action="/user?action=delete" method="post">
+                    <input type="hidden" name="idDelete" id="idDelete">
+
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Delete</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="jquery/jquery-3.5.1.min.js"></script>
+<script src="datatables/js/jquery.dataTables.min.js"></script>
+<script src="datatables/js/dataTables.bootstrap5.min.js"></script>
+<script src="bootstrap520/js/bootstrap.bundle.js"></script>
+<script>
+    function remove(id,name){
+        document.getElementById("idDelete").value = id;
+        document.getElementById("name").innerText = name;
+    }
+</script>
+</body>
+</html>
