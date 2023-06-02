@@ -8,5 +8,6 @@ public interface IUserService {
     List<User> showListUser();
     void createUser (User user);
     void deleteUser (int id);
-    void editUser(User user);
+    void editUser(int id,User user);
+    User searchByCountry(String country);
 }

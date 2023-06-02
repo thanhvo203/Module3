@@ -23,7 +23,12 @@ public class UserService implements IUserService{
     }
 
     @Override
-    public void editUser(User user) {
-        repository.editUser(user);
+    public void editUser(int id,User user) {
+        repository.editUser(id,user);
+    }
+
+    @Override
+    public User searchByCountry(String country) {
+        return repository.searchByCountry(country);
     }
 }

@@ -15,6 +15,8 @@ public class UserRepository implements IUserRepository{
     private static final String INSERT_USER = "insert into users(`name`,email,country) values (?,?,?);";
     private static final String DELETE_BY_ID = "delete from users where id = ?;";
     private static final String UPDATE_USERS_SQL = "update users set `name` = ?,email= ?, country =? where id = ?;";
+    private static final String SEARCH_BY_COUNTRY = " select * from users where country = ?;";
+
 
     protected Connection getConnection(){
        Connection connection = null;
@@ -91,7 +93,7 @@ public class UserRepository implements IUserRepository{
             }
         }
     }
-    public void editUser( User user){
+    public void editUser(int id, User user){
         Connection connection = getConnection();
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_USERS_SQL);
@@ -110,4 +112,25 @@ public class UserRepository implements IUserRepository{
             }
         }
     }
+
+    @Override
+    public User searchByCountry(String country) {
+        User user = new User();
+        try {
+            PreparedStatement preparedStatement = getConnection().prepareStatement(SEARCH_BY_COUNTRY);
+            preparedStatement.setString(1, country);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            if (resultSet.next()) {
+                user.setId(resultSet.getInt("id"));
+                user.setName(resultSet.getString("name"));
+                user.setEmail(resultSet.getString("email"));
+                user.setCountry(resultSet.getString("country"));
+                return user;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return user;
+    }
 }
+;

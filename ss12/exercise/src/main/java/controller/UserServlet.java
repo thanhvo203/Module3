@@ -26,6 +26,9 @@ public class UserServlet extends HttpServlet {
             case "edit":
                 showEdit(request,response);
                 break;
+            case "search":
+                searchByCountry(request,response);
+                break;
             default:
                 showListUser(request,response);
         }
@@ -53,9 +56,23 @@ public class UserServlet extends HttpServlet {
         }
     }
     public void showEdit (HttpServletRequest request, HttpServletResponse response){
+        int id = Integer.parseInt(request.getParameter("id"));
+        request.setAttribute("id",id);
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("/view/edit.jsp");
         try {
             requestDispatcher.forward(request,response);
+        } catch (ServletException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    public void searchByCountry(HttpServletRequest request, HttpServletResponse response){
+        String country = request.getParameter("country");
+        User user = userService.searchByCountry(country);
+        request.setAttribute("user", user);
+        try {
+            request.getRequestDispatcher("/view/list.jsp").forward(request, response);
         } catch (ServletException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -94,7 +111,7 @@ public class UserServlet extends HttpServlet {
         }
     }
     public void deleteUser (HttpServletRequest request, HttpServletResponse response){
-        int id = Integer.parseInt(request.getParameter("id"));
+        int id = Integer.parseInt(request.getParameter("idDelete"));
         userService.deleteUser(id);
         try {
             response.sendRedirect("/user");
@@ -103,12 +120,12 @@ public class UserServlet extends HttpServlet {
         }
     }
     public void editUser (HttpServletRequest request, HttpServletResponse response){
-        int id = Integer.parseInt(request.getParameter("idDelete"));
+        int id = Integer.parseInt(request.getParameter("id"));
         String name = request.getParameter("name");
         String email = request.getParameter("email");
         String country = request.getParameter("country");
-        User user = new User(id,name,email,country);
-        userService.editUser(user);
+        User user = new User(name,email,country);
+        userService.editUser(id,user);
         try {
             response.sendRedirect("/user");
         } catch (IOException e) {
