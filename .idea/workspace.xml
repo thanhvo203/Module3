@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1930f037-ea6b-4821-a65e-c16e5dd26476" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/IdeaProjects/.idea/IdeaProjects.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11/exercise/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11/exercise/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11/exercise/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11/exercise/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11/exercise/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11/exercise/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11/exercise/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11/exercise/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11/exercise/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11/exercise/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11/exercise/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11/exercise/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11/exercise/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11/exercise/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11/exercise/src/main/java/com/example/exercise/HelloServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11/exercise/src/main/java/controller/ProductServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11/exercise/src/main/java/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11/exercise/src/main/java/repository/IProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11/exercise/src/main/java/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11/exercise/src/main/java/service/IProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11/exercise/src/main/java/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11/exercise/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11/exercise/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11/exercise/src/main/webapp/view/add-new-product.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11/exercise/src/main/webapp/view/delete-product.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11/exercise/src/main/webapp/view/detail-product.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11/exercise/src/main/webapp/view/display-product.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11/exercise/src/main/webapp/view/edit-product.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11/exercise/src/main/webapp/view/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11/exercise/src/main/webapp/view/search-product.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8/practise/.idea/practise.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/module3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3_csdl/case_study/case_study_furama.sql" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3_csdl/case_study/case_study_furama.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3_csdl/case_study/case_study_furama_task_11_to_15.sql" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3_csdl/case_study/case_study_furama_task_11_to_15.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3_csdl/case_study/case_study_furama_task_16_to_20.sql" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3_csdl/case_study/case_study_furama_task_16_to_20.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3_csdl/case_study/case_study_furama_task_21_to_25.sql" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3_csdl/case_study/case_study_furama_task_21_to_25.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3_csdl/case_study/case_study_furama_task_2_to_5.sql" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3_csdl/case_study/case_study_furama_task_2_to_5.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_3_csdl/case_study/case_study_furama_task_6_to_10.sql" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_3_csdl/case_study/case_study_furama_task_6_to_10.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_module_part2/New folder/order_display.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_module_part2/New folder/order_display.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ss10/calculator/CalculatorServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ss10/controller/CustomerServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ss10/model/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ss10/repository/CustomerRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ss10/repository/ICustomerRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ss10/service/CustomerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ss10/service/ICustomerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/ss10/calculator_jsp/calculator.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/ss10/calculator_jsp/result.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/ss10/display-customer.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/ss10/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss1/exercise/class_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/ss1/exercise/class_table.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss2/exercise/erd_to_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/ss2/exercise/erd_to_table.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss2/exercise/quan_ly_ban_hang.sql" beforeDir="false" afterPath="$PROJECT_DIR$/ss2/exercise/quan_ly_ban_hang.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss3/exercise/management_sales.sql" beforeDir="false" afterPath="$PROJECT_DIR$/ss3/exercise/management_sales.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss3/exercise/query_database_student.sql" beforeDir="false" afterPath="$PROJECT_DIR$/ss3/exercise/query_database_student.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss4/exercise/funtion_group_by_mysql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/ss4/exercise/funtion_group_by_mysql.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss5/exercise/view_index_store_procedure.sql" beforeDir="false" afterPath="$PROJECT_DIR$/ss5/exercise/view_index_store_procedure.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss6/exercise/dinh_dang_van_ban_css/tai_lieu.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss6/exercise/dinh_dang_van_ban_css/tai_lieu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss6/exercise/nhung_css_vao_html/display.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss6/exercise/nhung_css_vao_html/display.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss6/exercise/nhung_css_vao_html/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/ss6/exercise/nhung_css_vao_html/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss6/exercise/tao_trang_truyen_tranh/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss6/exercise/tao_trang_truyen_tranh/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss6/exercise/tao_trang_truyen_tranh/stylecss.css" beforeDir="false" afterPath="$PROJECT_DIR$/ss6/exercise/tao_trang_truyen_tranh/stylecss.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss7/exercise/animation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss7/exercise/animation/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss7/exercise/animation/my_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/ss7/exercise/animation/my_style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss7/exercise/rwd/mystyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/ss7/exercise/rwd/mystyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss7/practise/menu_doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss7/practise/menu_doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss7/practise/menu_ngang.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss7/practise/menu_ngang.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss8/exercise/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss8/exercise/gallery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss8/exercise/landing_page/landing_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss8/exercise/landing_page/landing_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss8/practise/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/ss8/practise/css.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.sql" beforeDir="false" afterPath="$PROJECT_DIR$/test.sql" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ss9" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="2QSRzt6Sbwd3q0wrJrNrPww5pIA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.751" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.751" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/ss10/calculator_jsp/calculator.jsp" />
+      <option name="UPDATING_POLICY" value="hot-swap-classes" />
+      <deployment>
+        <artifact name="Gradle : com.example : ss9-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="98ec5557-f1f0-46eb-9f8e-6e8b814273b3" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="52602" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : com.example : ss9-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1930f037-ea6b-4821-a65e-c16e5dd26476" name="Changes" comment="" />
+      <created>1685345262869</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685345262869</updated>
+      <workItem from="1685345267982" duration="3988000" />
+      <workItem from="1685370387876" duration="1345000" />
+      <workItem from="1685410290396" duration="14776000" />
+      <workItem from="1685438386902" duration="3308000" />
+      <workItem from="1685451624776" duration="594000" />
+      <workItem from="1685457168592" duration="1670000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

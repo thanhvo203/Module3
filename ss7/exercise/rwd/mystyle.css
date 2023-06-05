@@ -72,10 +72,12 @@
     margin-right: 30px;
     margin-top: 5px;
 }
-.col-3{
+
+.col-3 {
     background: lightgray;
     height: 100%;
 }
+
 .ads {
     padding-top: 35px;
     background: gainsboro;
@@ -97,9 +99,11 @@
     padding-top: 35px;
     text-align: center;
 }
+
 #col1-row2 {
     height: 630px;
 }
+
 #content {
     height: 630px;
 }
@@ -109,11 +113,13 @@
     text-align: center;
     background: gray;
 }
+
 #col1-row1 {
     list-style: none;
     text-align: center;
     height: 630px;
 }
+
 .a {
     margin-top: 50px;
 }

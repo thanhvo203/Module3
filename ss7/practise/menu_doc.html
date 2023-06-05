@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style type="text/css">
-        body{
+        body {
             font-family: Arial;
         }
-        #menu,#menu ul ,#menu li{
+
+        #menu, #menu ul, #menu li {
             padding: 0;
             margin: 0;
         }
-        #menu li{
+
+        #menu li {
             list-style: none;
             position: relative;
             width: 100px;
@@ -21,49 +23,54 @@
             line-height: 30px;
             cursor: pointer;
         }
+
         #menu li a {
             text-decoration: none;
             color: white;
         }
-        #menu li:hover{
+
+        #menu li:hover {
             background-color: red;
         }
-        #menu ul ul{
+
+        #menu ul ul {
             position: absolute;
             top: 0px;
             left: 140px;
             visibility: hidden;
         }
+
         #menu ul li:hover ul {
             visibility: visible;
         }
     </style>
 </head>
 <body>
-<h3>ACCP  i10</h3>
+<h3>ACCP i10</h3>
 <div id="menu">
-<ul class="ngang">
-    <li><a href="#">Sem1</a>
-        <ul >
-            <li><a href="#">Computing</a></li>
-            <li><a href="#">C</a><li>
-            <li><a href="#">Building</a></li>
-            <li><a href="#">Transaction</a></li>
-            <li><a href="#">Project</a></li>
-        </ul>
-    </li>
-    <li><a href="#">Sem2</a>
-        <ul>
-            <li><a href="#">Cloud</a></li>
-            <li><a href="#">APJ-I</a></li>
-            <li><a href="#">APJ-II</a></li>
-            <li><a href="#">APJ-III</a></li>
-            <li><a href="#">eProject</a></li>
-        </ul>
-    </li>
-    <li><a href="#">Sem3</a></li>
-    <li><a href="#">Sem4</a></li>
-</ul>
+    <ul class="ngang">
+        <li><a href="#">Sem1</a>
+            <ul>
+                <li><a href="#">Computing</a></li>
+                <li><a href="#">C</a>
+                <li>
+                <li><a href="#">Building</a></li>
+                <li><a href="#">Transaction</a></li>
+                <li><a href="#">Project</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Sem2</a>
+            <ul>
+                <li><a href="#">Cloud</a></li>
+                <li><a href="#">APJ-I</a></li>
+                <li><a href="#">APJ-II</a></li>
+                <li><a href="#">APJ-III</a></li>
+                <li><a href="#">eProject</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Sem3</a></li>
+        <li><a href="#">Sem4</a></li>
+    </ul>
 </div>
 
 </body>

@@ -1,9 +1,11 @@
 div.top {
     background: black;
 }
-div.right{
+
+div.right {
     float: right;
 }
+
 ul {
     display: flex;
     width: 50%;
